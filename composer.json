@@ -1,0 +1,34 @@
+{
+    "name": "armincms/news",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "whitecube/nova-flexible-content": "^0.1",
+        "armincms/armincms": "*", 
+        "armincms/taggable": "*",
+        "armincms/categorizable": "*",
+        "armincms/raw-data": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Armincms\\News\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Armincms\\News\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
